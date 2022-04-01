@@ -6,33 +6,29 @@ public class playerController : MonoBehaviour
 {
     public float horizontalInput;
     public float speed = 10.0f;
-    private Rigidbody playerRb;
+    private Rigidbody2D playerRb;
     public float jumpForce;
     public float gravityModifier;
     public bool isOnGround = true;
     // Start is called before the first frame update
     void Start()
     {
-        playerRb = GetComponent<Rigidbody>();
+        playerRb = GetComponent<Rigidbody2D>();
         Physics.gravity *= gravityModifier;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
-        }
-        horizontalInput = Input.GetAxis("horizontal");
-        transform.Translate(Vector3.right * horizontalInput * Time.deltaTime * speed);
+        horizontalInput = Input.GetAxis("Horizontal");
+        transform.Translate(Vector2.right * horizontalInput * Time.deltaTime * speed);
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
-            playerRb.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
+            playerRb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
             isOnGround = false;
         }
     }
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         isOnGround = true;
     }
