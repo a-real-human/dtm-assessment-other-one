@@ -220,6 +220,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 325615f982df64c49b7bc108437d1c92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 1957491104}
 --- !u!1 &597835995
 GameObject:
   m_ObjectHideFlags: 0
@@ -11569,6 +11570,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a24d71fc3262dbf458ca5db06519bc66, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  horizontalInput: 1.18
+  speed: 10
+  jumpForce: 0
+  gravityModifier: 0
+  isOnGround: 1
 --- !u!1 &1974922975
 GameObject:
   m_ObjectHideFlags: 0
