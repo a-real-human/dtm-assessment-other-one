@@ -21,7 +21,8 @@ public class playerController : MonoBehaviour
     void Update()
     {
         horizontalInput = Input.GetAxis("Horizontal");
-        transform.Translate(Vector2.right * horizontalInput * Time.deltaTime * speed);
+        if (isOnGround)
+            playerRb.AddForce(Vector2.right * horizontalInput * speed, ForceMode2D.Force);
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
             playerRb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);
