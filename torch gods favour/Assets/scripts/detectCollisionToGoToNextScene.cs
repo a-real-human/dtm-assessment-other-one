@@ -20,6 +20,6 @@ public class detectCollisionToGoToNextScene : MonoBehaviour
     // to make collisions detectable and to go to next level/scene
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        SceneManager.LoadScene("tutorial", LoadSceneMode.Single);
     }
 }

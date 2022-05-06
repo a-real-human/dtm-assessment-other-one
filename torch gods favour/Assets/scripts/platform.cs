@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class platform : MonoBehaviour
 {
+    // Platform Effector2d to make platoforms work as platforms
     private PlatformEffector2D effector;
-
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -14,16 +15,14 @@ public class platform : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        if (-0.8 => input.GetAxis("vertical") )
+    { 
+    if (Input.GetKeyUp(KeyCode.DownArrow) && Input.GetKeyUp(KeyCode.S))
         {
             effector.rotationalOffset = 0f;
-        }
-
-        if (input.GetAxis("vertical") => -0.8)  
+        }       
+    if (Input.GetKey(KeyCode.DownArrow)||Input.GetKey(KeyCode.S))
         {
             effector.rotationalOffset = 180f;
         }
-      
     }
 }
