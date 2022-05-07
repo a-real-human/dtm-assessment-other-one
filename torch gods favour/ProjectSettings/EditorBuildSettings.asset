@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Scenes/tutorial.unity
     guid: 967e84c8c22142749b892f86dcea1c55
   - enabled: 1
-    path: Assets/Scenes/torches.unity
+    path: Assets/Scenes/level1.unity
     guid: fc9265e28d2044441aac735c291514ec
+  - enabled: 1
+    path: Assets/Scenes/death scene.unity
+    guid: 59b2df0ed75c0e345b45b301aeafd8c5
   m_configObjects: {}

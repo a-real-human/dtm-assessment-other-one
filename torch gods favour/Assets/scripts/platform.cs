@@ -20,7 +20,7 @@ public class platform : MonoBehaviour
         {
             effector.rotationalOffset = 0f;
         }       
-    if (Input.GetKey(KeyCode.DownArrow)||Input.GetKey(KeyCode.S))
+    if (Input.GetKeyDown(KeyCode.DownArrow)||Input.GetKey(KeyCode.S))
         {
             effector.rotationalOffset = 180f;
         }
