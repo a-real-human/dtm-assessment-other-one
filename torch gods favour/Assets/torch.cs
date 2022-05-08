@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DestoryOnCollision : MonoBehaviour
+public class torch : MonoBehaviour
 
 {
     private GameManager gameManager;
