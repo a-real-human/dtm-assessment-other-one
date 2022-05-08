@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 330926386932805272}
   - component: {fileID: 330926386932805273}
   - component: {fileID: 330926386932805271}
+  - component: {fileID: -939727222871175895}
   m_Layer: 0
   m_Name: 'torch '
   m_TagString: Untagged
@@ -101,3 +102,15 @@ CapsuleCollider2D:
   m_Offset: {x: 0.32525322, y: 0.09}
   m_Size: {x: 2.9607773, y: 4.028951}
   m_Direction: 0
+--- !u!114 &-939727222871175895
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 330926386932805274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f6b2fbd16e95bc7448736c513599d19e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
