@@ -8,7 +8,7 @@ public class DestoryOnCollision : MonoBehaviour
     private GameManager gameManager;
     void Start()
     {
-        gameManager = GameObject.Find("Game Manager").GetComponent<GameManager>();
+        gameManager = GameObject.Find("GameManager").GetComponent<GameManager>();
     }
     private void OnTriggerEnter2D(Collider2D other)
     {

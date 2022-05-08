@@ -14,6 +14,6 @@ public class DestoryOnCollision : MonoBehaviour
     {
        
         Destroy(gameObject);
-         gameManager.UpdateScore(1);
+             gameManager.UpdateScore(1);
     }
 }
