@@ -21,7 +21,7 @@ EditorBuildSettings:
     path: Assets/Scenes/EASY LEVEL.unity
     guid: ef21b88e21874b34aab0ab3b306f64e3
   - enabled: 1
-    path: Assets/Scenes/MEDUIM LEVEL.unity
+    path: Assets/Scenes/MEDIUM LEVEL.unity
     guid: 948ce5b373025c44089e05cc551ffc23
   - enabled: 1
     path: Assets/Scenes/HARD LEVEL.unity
