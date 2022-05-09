@@ -21,6 +21,6 @@ public class detectCollisionToGoToNextScene : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         //what scene to load
-        SceneManager.LoadScene("LEVEL 1", LoadSceneMode.Single);
+        SceneManager.LoadScene("tutorial", LoadSceneMode.Single);
     }
 }

@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class death : MonoBehaviour
 {
-    //so it will go to the death scene when player collides with the gameobject
+    //so it will go to the game over scene when player collides with the gameobject
         private void OnTriggerEnter2D(Collider2D other)
     {
         //what scene to load 
