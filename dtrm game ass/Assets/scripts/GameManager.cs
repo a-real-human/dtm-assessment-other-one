@@ -16,7 +16,7 @@ public class GameManager : MonoBehaviour
         score = 0;
      
     }
-
+//TO UPDATE SCORE
     public void UpdateScore(int scoreToAdd)
     {
         //increases the score
