@@ -19,9 +19,11 @@ public class playerController : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {//get player's input 
         horizontalInput = Input.GetAxis("Horizontal");
+        //accelerate left or right
         playerRb.AddForce(Vector2.right * horizontalInput * speed, ForceMode2D.Force);
+        //jump with a collision detection
         if (Input.GetKeyDown(KeyCode.Space) && isOnGround)
         {
             playerRb.AddForce(Vector2.up * jumpForce, ForceMode2D.Impulse);

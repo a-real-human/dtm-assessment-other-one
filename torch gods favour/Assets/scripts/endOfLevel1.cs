@@ -10,6 +10,6 @@ public class endOfLevel1 : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         //what scene to load 
-        SceneManager.LoadScene("LEVEL 2", LoadSceneMode.Single);
+        SceneManager.LoadScene("LEVEL2", LoadSceneMode.Single);
     }
 }

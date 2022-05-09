@@ -8,6 +8,7 @@ public class GameManager : MonoBehaviour
     private int score;
     //to display the score
     public TextMeshProUGUI scoreText;
+    //detect when the torches are collected
     public List<GameObject> torches;
     // Start is called before the first frame update
     void Start()
