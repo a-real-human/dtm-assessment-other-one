@@ -4,17 +4,14 @@ using UnityEngine;
 
 public class followPlayer : MonoBehaviour
 {
+    //what game object will be followed by the camera
     public GameObject player;
+    //to offset the camera so the player appears in the middle of the screen
     private Vector3 offset = new Vector3(0, 0, -10);
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
     // Update is called once per frame
     void LateUpdate()
-    {//follow player
+    {   
+        //follow player
         transform.position = player.transform.position + offset;
     }
 }
